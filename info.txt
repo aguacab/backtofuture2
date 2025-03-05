@@ -1,0 +1,43 @@
+En Git, un fichero tiene el estado "tracked" cuando Git lo reconoce y lo está siguiendo para detectar cambios.
+Para que esté tracked, debe estar añadido al staging area.
+
+untracked       trakced
+WORKSPACE  /   STAGING  / LOCAL REPOSITORY / REMOTE REPOSITORY
+
+              git add .
+
+modificados    preparados
+
+Cuando hacemos un git commit -m "" los archivos del staging se guardan en local repository
+
+Cuando hacemos un git push origin main subimos los cambios al remote reopository
+
+Los archivos modificados pero sin git add se quedan en el workspace como modificados y com untracked
+
+Paso 1: git init
+Paso 2: Crear repositorio en GitHub
+        Ve a GitHub.
+            Crea una nueva cuenta (si no tienes una).
+            Haz clic en el botón "New repository".
+            Asigna un nombre al repositorio (puede ser igual al de tu proyecto).
+            No añadas README, .gitignore ni licencia (los agregaremos después).
+            Haz clic en "Create repository".
+Paso 3: Vincular proyecto local con repositorio
+git remote add origin url_de_GitHub
+
+git init
+  |
+  v
+git add .
+  |
+  v
+git commit -m "Primer commit"
+  |
+  v
+git remote add origin https://github.com/TU_USUARIO/NOMBRE_DEL_REPO.git
+  |
+  v
+git branch -M main
+  |
+  v
+git push -u origin main

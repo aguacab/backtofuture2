@@ -1,0 +1,14 @@
+# Ignorar videos
+#/videos/*
+
+# Ignorar contenido de la carpeta 'privado/'
+/privado/
+
+# Ignorar ficheros de secretos
+db.sql
+secretos-flux-capacitor.txt
+
+# Ignorar archivos comprimidos
+*.zip
+*.rar
+*.7z
